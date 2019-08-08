@@ -1,6 +1,6 @@
 //
 //  BaseMode.m
-//  PodsBranchTest
+//  YYSDK
 //
 //  Created by 邀月 on 2019/8/8.
 //  Copyright © 2019 Sensors Data Inc. All rights reserved.
@@ -10,4 +10,7 @@
 
 @implementation BaseMode
 
+- (void)finishLoad {
+    NSLog(@"Hello YYSDK 🙂");
+}
 @end

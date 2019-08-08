@@ -13,8 +13,23 @@
 		4DD0392022FC160E006BF5B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD0391F22FC160E006BF5B0 /* Assets.xcassets */; };
 		4DD0392322FC160E006BF5B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD0392122FC160E006BF5B0 /* LaunchScreen.storyboard */; };
 		4DD0392622FC160E006BF5B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0392522FC160E006BF5B0 /* main.m */; };
-		4DD0393322FC1AA2006BF5B0 /* BaseMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0393222FC1AA2006BF5B0 /* BaseMode.m */; };
+		4DD0396822FC4979006BF5B0 /* YYSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD0396722FC4979006BF5B0 /* YYSDK.framework */; };
+		4DD0396922FC4979006BF5B0 /* YYSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD0396722FC4979006BF5B0 /* YYSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DD0396A22FC4979006BF5B0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4DD0396922FC4979006BF5B0 /* YYSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4DD0391322FC160C006BF5B0 /* PodsBranchTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodsBranchTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,8 +42,7 @@
 		4DD0392222FC160E006BF5B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DD0392422FC160E006BF5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DD0392522FC160E006BF5B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4DD0393122FC1AA2006BF5B0 /* BaseMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMode.h; sourceTree = "<group>"; };
-		4DD0393222FC1AA2006BF5B0 /* BaseMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMode.m; sourceTree = "<group>"; };
+		4DD0396722FC4979006BF5B0 /* YYSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YYSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DD0396822FC4979006BF5B0 /* YYSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,9 +60,9 @@
 		4DD0390A22FC160C006BF5B0 = {
 			isa = PBXGroup;
 			children = (
-				4DD0393022FC1AA2006BF5B0 /* YYSDK */,
 				4DD0391522FC160C006BF5B0 /* PodsBranchTest */,
 				4DD0391422FC160C006BF5B0 /* Products */,
+				4DD0396722FC4979006BF5B0 /* YYSDK.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,15 +90,6 @@
 			path = PodsBranchTest;
 			sourceTree = "<group>";
 		};
-		4DD0393022FC1AA2006BF5B0 /* YYSDK */ = {
-			isa = PBXGroup;
-			children = (
-				4DD0393122FC1AA2006BF5B0 /* BaseMode.h */,
-				4DD0393222FC1AA2006BF5B0 /* BaseMode.m */,
-			);
-			path = YYSDK;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,6 +100,7 @@
 				4DD0390F22FC160C006BF5B0 /* Sources */,
 				4DD0391022FC160C006BF5B0 /* Frameworks */,
 				4DD0391122FC160C006BF5B0 /* Resources */,
+				4DD0396A22FC4979006BF5B0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,7 +162,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DD0391B22FC160C006BF5B0 /* ViewController.m in Sources */,
-				4DD0393322FC1AA2006BF5B0 /* BaseMode.m in Sources */,
 				4DD0392622FC160E006BF5B0 /* main.m in Sources */,
 				4DD0391822FC160C006BF5B0 /* AppDelegate.m in Sources */,
 			);

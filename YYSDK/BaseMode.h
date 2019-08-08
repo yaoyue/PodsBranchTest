@@ -1,6 +1,6 @@
 //
 //  BaseMode.h
-//  PodsBranchTest
+//  YYSDK
 //
 //  Created by 邀月 on 2019/8/8.
 //  Copyright © 2019 Sensors Data Inc. All rights reserved.
@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseMode : NSObject
+
+- (void)finishLoad;
 
 @end
 
