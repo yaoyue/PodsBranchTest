@@ -18,9 +18,9 @@ Pod::Spec.new do |spec|
   spec.name         = "YYSDK"
   spec.version      = "1.0.0"
   spec.summary      = "测试 YYSDK"
-    s.source       = { :git => 'https://github.com/sensorsdata/sa-sdk-ios.git', :tag => "v#{s.version}" } 
-      s.author = { "yaoyue" => "chuqsh1991@foxmail.com" }
-  s.platform = :ios, "8.0"
+  spec.source       = { :git => 'https://github.com/yaoyue/PodsBranchTest', :tag => "v#{s.version}" } 
+  spec.author = { "yaoyue" => "chuqsh1991@foxmail.com" }
+  spec.platform = :ios, "8.0"
 
 
 
@@ -29,7 +29,7 @@ Pod::Spec.new do |spec|
 
 
 
-  s.subspec 'core' do |c|
+  spec.subspec 'core' do |c|
     c.source_files  =  "YYSDK/*.{h,m}"
     c.public_header_files = "YYSDK/BaseMode.h"
   end
