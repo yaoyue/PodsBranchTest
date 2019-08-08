@@ -15,23 +15,28 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "SDK"
+  spec.name         = "YYSDK"
   spec.version      = "1.0.0"
-  spec.summary      = "测试 SDK"
-    s.source       = { :git => 'https://github.com/sensorsdata/sa-sdk-ios.git', :tag => "v#{s.version}" } 
-      s.author = { "yaoyue" => "chuqsh1991@foxmail.com" }
-  s.platform = :ios, "8.0"
+  spec.summary      = "测试 YYSDK"
+  spec.source       = { :git => 'https://github.com/yaoyue/PodsBranchTest.git',:tag => "v#{spec.version}" }
+  spec.homepage     = "https://github.com/yaoyue/PodsBranchTest"
+  spec.author       = { "yaoyue" => "chuqsh1991@foxmail.com" }
+  spec.platform     = :ios, "8.0"
+  spec.license      = { :type => "Apache License, Version 2.0" }
+  spec.default_subspec = 'core'
+  spec.frameworks   = 'UIKit', 'Foundation', 'SystemConfiguration', 'CoreTelephony', 'CoreGraphics', 'QuartzCore'
+  spec.libraries    = 'sqlite3', 'z'
 
 
 
-  spec.homepage     = "http://www.sensorsdata.cn"
+  
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
 
-  s.subspec 'core' do |c|
-    c.source_files  =  "SDK/*.{h,m}"
-    c.public_header_files = "SDK/BaseMode.h"
+  spec.subspec 'core' do |c|
+    c.source_files  =  "YYSDK/*.{h,m}"
+    c.public_header_files = "YYSDK/BaseMode.h"
   end
 
 end

@@ -13,7 +13,7 @@
 		4DD0392022FC160E006BF5B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD0391F22FC160E006BF5B0 /* Assets.xcassets */; };
 		4DD0392322FC160E006BF5B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD0392122FC160E006BF5B0 /* LaunchScreen.storyboard */; };
 		4DD0392622FC160E006BF5B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0392522FC160E006BF5B0 /* main.m */; };
-		4DD0392F22FC1640006BF5B0 /* BaseMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0392E22FC1640006BF5B0 /* BaseMode.m */; };
+		4DD0393322FC1AA2006BF5B0 /* BaseMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0393222FC1AA2006BF5B0 /* BaseMode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		4DD0392222FC160E006BF5B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DD0392422FC160E006BF5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DD0392522FC160E006BF5B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4DD0392D22FC1640006BF5B0 /* BaseMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseMode.h; sourceTree = "<group>"; };
-		4DD0392E22FC1640006BF5B0 /* BaseMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseMode.m; sourceTree = "<group>"; };
+		4DD0393122FC1AA2006BF5B0 /* BaseMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMode.h; sourceTree = "<group>"; };
+		4DD0393222FC1AA2006BF5B0 /* BaseMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 		4DD0390A22FC160C006BF5B0 = {
 			isa = PBXGroup;
 			children = (
-				4DD0392C22FC161F006BF5B0 /* SDK */,
+				4DD0393022FC1AA2006BF5B0 /* YYSDK */,
 				4DD0391522FC160C006BF5B0 /* PodsBranchTest */,
 				4DD0391422FC160C006BF5B0 /* Products */,
 			);
@@ -75,13 +75,13 @@
 			path = PodsBranchTest;
 			sourceTree = "<group>";
 		};
-		4DD0392C22FC161F006BF5B0 /* SDK */ = {
+		4DD0393022FC1AA2006BF5B0 /* YYSDK */ = {
 			isa = PBXGroup;
 			children = (
-				4DD0392D22FC1640006BF5B0 /* BaseMode.h */,
-				4DD0392E22FC1640006BF5B0 /* BaseMode.m */,
+				4DD0393122FC1AA2006BF5B0 /* BaseMode.h */,
+				4DD0393222FC1AA2006BF5B0 /* BaseMode.m */,
 			);
-			path = SDK;
+			path = YYSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DD0391B22FC160C006BF5B0 /* ViewController.m in Sources */,
-				4DD0392F22FC1640006BF5B0 /* BaseMode.m in Sources */,
+				4DD0393322FC1AA2006BF5B0 /* BaseMode.m in Sources */,
 				4DD0392622FC160E006BF5B0 /* main.m in Sources */,
 				4DD0391822FC160C006BF5B0 /* AppDelegate.m in Sources */,
 			);
