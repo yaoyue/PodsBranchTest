@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "SDK"
+  spec.name         = "YYSDK"
   spec.version      = "1.0.0"
-  spec.summary      = "测试 SDK"
+  spec.summary      = "测试 YYSDK"
     s.source       = { :git => 'https://github.com/sensorsdata/sa-sdk-ios.git', :tag => "v#{s.version}" } 
       s.author = { "yaoyue" => "chuqsh1991@foxmail.com" }
   s.platform = :ios, "8.0"
