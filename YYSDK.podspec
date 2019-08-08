@@ -30,8 +30,8 @@ Pod::Spec.new do |spec|
 
 
   s.subspec 'core' do |c|
-    c.source_files  =  "SDK/*.{h,m}"
-    c.public_header_files = "SDK/BaseMode.h"
+    c.source_files  =  "YYSDK/*.{h,m}"
+    c.public_header_files = "YYSDK/BaseMode.h"
   end
 
 end
