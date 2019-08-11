@@ -16,9 +16,9 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YYSDK"
-  spec.version      = "1.0.1-pre"
+  spec.version      = "1.0.2-pre"
   spec.summary      = "测试 YYSDK"
-  spec.source       = { :git => 'https://github.com/yaoyue/PodsBranchTest.git',:tag => "v#{spec.version}" }
+  spec.source       = { :git => 'https://github.com/yaoyue/PodsBranchTest.git',:branch => 'pre',:tag => "v#{spec.version}" }
   spec.homepage     = "https://github.com/yaoyue/PodsBranchTest"
   spec.author       = { "yaoyue" => "chuqsh1991@foxmail.com" }
   spec.platform     = :ios, "8.0"
