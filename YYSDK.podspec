@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YYSDK"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "测试 YYSDK"
   spec.source       = { :git => 'https://github.com/yaoyue/PodsBranchTest.git',:tag => "v#{spec.version}" }
   spec.homepage     = "https://github.com/yaoyue/PodsBranchTest"
@@ -41,7 +41,7 @@ Pod::Spec.new do |spec|
 
     # 禁用 GPS 定位采集，相关代码不参与编译，不引入 CoreLocation framework
   spec.subspec 'DISABLE_TRACK_GPS' do |f|
-    spec.frameworks = 'UIKit', 'Foundation', 'SystemConfiguration', 'CoreTelephony', 'CoreMotion'
+    f.frameworks = 'UIKit', 'Foundation', 'SystemConfiguration', 'CoreTelephony', 'CoreMotion'
     f.dependency 'YYSDK/core'
     f.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'SENSORS_ANALYTICS_DISABLE_TRACK_GPS=1'}
   end
